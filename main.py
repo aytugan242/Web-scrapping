@@ -30,7 +30,7 @@ for articles_tag_div in articles_tags_div:
     if articles_tag_div.find("span", class_='bloko-header-section-2'):
         price = articles_tag_div.find("span", class_='bloko-header-section-2').text
     else:
-        'Price не указан'
+        price = 'Price не указан'
     company = articles_tag_div.find("a", class_='bloko-link bloko-link_kind-tertiary').text
     city = articles_tag_div.find("div", {'class': 'bloko-text', 'data-qa': 'vacancy-serp__vacancy-address'}).text.split(',')[0]
 
